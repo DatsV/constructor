@@ -1,0 +1,43 @@
+@import '../../scss/mixins';
+
+.container {
+  position: relative;
+  width: 270px;
+
+  &::after {
+    @include divider;
+    width: 1px;
+    height: 100%;
+    right: 0;
+    top: 0;
+  }
+
+  .widgetsGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+
+    margin: 30px;
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 0px;
+      gap: 10px;
+
+      width: 210px;
+      height: 83px;
+    }
+
+    .item {
+      width: 100px;
+
+      background: #f6f9fe;
+
+      @include cardBody;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@import '../../scss/variables';
+
+.container {
+  display: flex;
+  min-height: calc(100vh - $header-height);
+}
+
+.mainContainer {
+  display: flex;
+  width: 100%;
+}

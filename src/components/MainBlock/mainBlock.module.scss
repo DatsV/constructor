@@ -1,0 +1,13 @@
+.container {
+  min-width: 538px;
+  background-color: #f5f5fc;
+
+  .blocksContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    margin: 25px 30px;
+  }
+}
